@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server';
-import resolvers from './schema.js';
-import typeDefs from './schema.graphql';
+import resolvers from './resolvers.js';
+import typeDefs from './type-defs.graphql';
 import CustomDatasource from './custom-datasource.js';
 
 const server = new ApolloServer({

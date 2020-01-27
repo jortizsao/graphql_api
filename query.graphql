@@ -1,0 +1,15 @@
+query getCustomers {
+  customers {
+    id
+    firstName
+    lastName
+    orders {
+      id
+      orderNumber
+      lineItems {
+        id
+        productName(lang: "en")
+      }
+    }
+  }
+}
